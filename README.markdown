@@ -3,23 +3,15 @@
 *Description*: A set of scripts for checking out and tracking a mercurial project
 from git. Push supported added as well although it is still experimental.
 
-*Author*: Cosmin Stejerean (offbytwo)
+*Author*: Cosmin Stejerean (offbytwo), simplified for Linux distributions by bmwiedemann
 
 *License*: MIT
 
 ## Dependencies ##
 
-Mercurial (`hg`) and python must be installed and in your `$PATH`.
+Mercurial (`hg`) and `hg-fast-export` must be installed and in your `$PATH`.
 
 On Windows, you will also need a copy of Mercurial for Python, available at [the Mercurial downloads page](http://mercurial.selenic.com/downloads/)
-
-If this is a fresh checkout run
-
-    $ git submodule update --init
-
-to pull in fast-export. If for some reason you cannot do this
-get a copy of fast-export from http://repo.or.cz/w/fast-export.git and
-place it in the root of the checkout.
 
 ## Installation ##
 
@@ -31,7 +23,7 @@ Alternatively you can execute
         $ make
         $ sudo make install
 
-to install the script and all required fast-export files in `/usr/local` (you
+to install the script in `/usr/local` (you
 can change the destination by passing eg `PREFIX=/usr` to *both* `make`
 invocations)
 
